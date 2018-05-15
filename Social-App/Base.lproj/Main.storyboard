@@ -54,6 +54,14 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.75486160170000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-KR-d8T">
+                                <rect key="frame" x="148" y="415" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.0" alpha="0.80133142609999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98700615284974091" green="0.57001770015814346" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

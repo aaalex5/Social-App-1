@@ -7,34 +7,34 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>478549399112-if863fao3guiubmg9c1up62341vbeud3.apps.googleusercontent.com</string>
+	<string>479231809527-92i6591u7h01g7qo74bkgcftp9hikgd7.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.478549399112-if863fao3guiubmg9c1up62341vbeud3</string>
+	<string>com.googleusercontent.apps.479231809527-92i6591u7h01g7qo74bkgcftp9hikgd7</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDlphqsYkYIg_Z0QTvbUSJjEaK4e7XqTLA</string>
+	<string>AIzaSyB5q09lfAoyTyikwvjzIxNKdeNI2b26UMg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>478549399112</string>
+	<string>479231809527</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.google.firebase.codelab.FriendlyChatSwift</string>
+	<string>SAAAMYproductions.Social-App</string>
 	<key>PROJECT_ID</key>
-	<string>freindlychat-d2d85</string>
+	<string>loginregistration-48321</string>
 	<key>STORAGE_BUCKET</key>
-	<string>freindlychat-d2d85.appspot.com</string>
+	<string>loginregistration-48321.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
 	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:478549399112:ios:1f8bd1d7b652f2c5</string>
+	<string>1:479231809527:ios:43070bad748eb260</string>
 	<key>DATABASE_URL</key>
-	<string>https://freindlychat-d2d85.firebaseio.com</string>
+	<string>https://loginregistration-48321.firebaseio.com</string>
 </dict>
 </plist>

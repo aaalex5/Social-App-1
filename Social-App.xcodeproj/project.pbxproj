@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D80012D4A5ABE539B004FCF2 /* Pods_Social_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA69F3D5ED0E0C8C29455FD /* Pods_Social_App.framework */; };
-		E0E3754720BDC79D006FCB81 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E3754620BDC79D006FCB81 /* ContainerVC.swift */; };
-		E0E3754920BDCB29006FCB81 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E3754820BDCB29006FCB81 /* SideMenuVC.swift */; };
-		E0E3754B20BDD228006FCB81 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E3754A20BDD228006FCB81 /* MainVC.swift */; };
 		EB579AF420C36EBE00672B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB579AF320C36EBE00672B2D /* GoogleService-Info.plist */; };
 		EBDF281020AA2F4D00458E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */; };
 		EBDF281220AA2F4D00458E05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF281120AA2F4D00458E05 /* ViewController.swift */; };
@@ -23,9 +20,6 @@
 		5EA69F3D5ED0E0C8C29455FD /* Pods_Social_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49519C9995F02E7C6BDC89D /* Pods-Social-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social-App/Pods-Social-App.debug.xcconfig"; sourceTree = "<group>"; };
 		D150FC27A092F9FD7EADD2CB /* Pods-Social-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social-App/Pods-Social-App.release.xcconfig"; sourceTree = "<group>"; };
-		E0E3754620BDC79D006FCB81 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
-		E0E3754820BDCB29006FCB81 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
-		E0E3754A20BDD228006FCB81 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		EB579AF320C36EBE00672B2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBDF280C20AA2F4D00458E05 /* Social-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,9 +82,6 @@
 			children = (
 				EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */,
 				EBDF281120AA2F4D00458E05 /* ViewController.swift */,
-				E0E3754620BDC79D006FCB81 /* ContainerVC.swift */,
-				E0E3754820BDCB29006FCB81 /* SideMenuVC.swift */,
-				E0E3754A20BDD228006FCB81 /* MainVC.swift */,
 				EBDF281320AA2F4D00458E05 /* Main.storyboard */,
 				EBDF281620AA2F4D00458E05 /* Assets.xcassets */,
 				EBDF281820AA2F4D00458E05 /* LaunchScreen.storyboard */,
@@ -218,10 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0E3754720BDC79D006FCB81 /* ContainerVC.swift in Sources */,
-				E0E3754B20BDD228006FCB81 /* MainVC.swift in Sources */,
 				EBDF281220AA2F4D00458E05 /* ViewController.swift in Sources */,
-				E0E3754920BDCB29006FCB81 /* SideMenuVC.swift in Sources */,
 				EBDF281020AA2F4D00458E05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

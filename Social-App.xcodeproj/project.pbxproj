@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D80012D4A5ABE539B004FCF2 /* Pods_Social_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA69F3D5ED0E0C8C29455FD /* Pods_Social_App.framework */; };
 		EB579AF420C36EBE00672B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB579AF320C36EBE00672B2D /* GoogleService-Info.plist */; };
+		EBD7DC2120C6F10E00AC7E11 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7DC2020C6F10E00AC7E11 /* BaseViewController.swift */; };
+		EBD7DC2320C6F1B300AC7E11 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7DC2220C6F1B300AC7E11 /* MenuViewController.swift */; };
+		EBD7DC2520C8463B00AC7E11 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7DC2420C8463B00AC7E11 /* MainViewController.swift */; };
 		EBDF281020AA2F4D00458E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */; };
 		EBDF281220AA2F4D00458E05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF281120AA2F4D00458E05 /* ViewController.swift */; };
 		EBDF281520AA2F4D00458E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDF281320AA2F4D00458E05 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 		A49519C9995F02E7C6BDC89D /* Pods-Social-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social-App/Pods-Social-App.debug.xcconfig"; sourceTree = "<group>"; };
 		D150FC27A092F9FD7EADD2CB /* Pods-Social-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social-App/Pods-Social-App.release.xcconfig"; sourceTree = "<group>"; };
 		EB579AF320C36EBE00672B2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EBD7DC2020C6F10E00AC7E11 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EBD7DC2220C6F1B300AC7E11 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EBD7DC2420C8463B00AC7E11 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EBDF280C20AA2F4D00458E05 /* Social-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBDF281120AA2F4D00458E05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +86,12 @@
 		EBDF280E20AA2F4D00458E05 /* Social-App */ = {
 			isa = PBXGroup;
 			children = (
+				EBD7DC2020C6F10E00AC7E11 /* BaseViewController.swift */,
+				EBD7DC2420C8463B00AC7E11 /* MainViewController.swift */,
 				EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */,
 				EBDF281120AA2F4D00458E05 /* ViewController.swift */,
 				EBDF281320AA2F4D00458E05 /* Main.storyboard */,
+				EBD7DC2220C6F1B300AC7E11 /* MenuViewController.swift */,
 				EBDF281620AA2F4D00458E05 /* Assets.xcassets */,
 				EBDF281820AA2F4D00458E05 /* LaunchScreen.storyboard */,
 				EBDF281B20AA2F4D00458E05 /* Info.plist */,
@@ -211,6 +220,9 @@
 			files = (
 				EBDF281220AA2F4D00458E05 /* ViewController.swift in Sources */,
 				EBDF281020AA2F4D00458E05 /* AppDelegate.swift in Sources */,
+				EBD7DC2120C6F10E00AC7E11 /* BaseViewController.swift in Sources */,
+				EBD7DC2320C6F1B300AC7E11 /* MenuViewController.swift in Sources */,
+				EBD7DC2520C8463B00AC7E11 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

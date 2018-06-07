@@ -72,6 +72,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let mainStoreboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let DVC = mainStoreboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        
         self.navigationController?.pushViewController(DVC, animated: true)
     }
     

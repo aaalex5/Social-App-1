@@ -17,6 +17,7 @@
 		EBDF281520AA2F4D00458E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDF281320AA2F4D00458E05 /* Main.storyboard */; };
 		EBDF281720AA2F4D00458E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDF281620AA2F4D00458E05 /* Assets.xcassets */; };
 		EBDF281A20AA2F4D00458E05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDF281820AA2F4D00458E05 /* LaunchScreen.storyboard */; };
+		EBE8C18620C9AEF7002DF414 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8C18520C9AEF7002DF414 /* MenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EBDF281620AA2F4D00458E05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBDF281920AA2F4D00458E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBDF281B20AA2F4D00458E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE8C18520C9AEF7002DF414 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				EBDF281820AA2F4D00458E05 /* LaunchScreen.storyboard */,
 				EBDF281B20AA2F4D00458E05 /* Info.plist */,
 				EB579AF320C36EBE00672B2D /* GoogleService-Info.plist */,
+				EBE8C18520C9AEF7002DF414 /* MenuTableViewCell.swift */,
 			);
 			path = "Social-App";
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				EBDF281220AA2F4D00458E05 /* ViewController.swift in Sources */,
 				EBDF281020AA2F4D00458E05 /* AppDelegate.swift in Sources */,
+				EBE8C18620C9AEF7002DF414 /* MenuTableViewCell.swift in Sources */,
 				EBD7DC2120C6F10E00AC7E11 /* BaseViewController.swift in Sources */,
 				EBD7DC2320C6F1B300AC7E11 /* MenuViewController.swift in Sources */,
 				EBD7DC2520C8463B00AC7E11 /* MainViewController.swift in Sources */,

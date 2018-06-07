@@ -13,7 +13,7 @@ protocol SlideMenuDelegate {
 }
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
 
     @IBOutlet weak var buttonMenuOverlay: UIButton!
     var buttonMenu : UIButton!
@@ -64,16 +64,52 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCell") as! MenuTableViewCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCell0") as! MenuTableViewCell
+        
+        switch indexPath.row {
+        case 0:
+            cell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCell0") as! MenuTableViewCell
+        case 1:
+            cell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCell1") as! MenuTableViewCell
+        case 2:
+            cell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCell2") as! MenuTableViewCell
+        case 3:
+            cell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCell3") as! MenuTableViewCell
+        case 4:
+            cell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCell4") as! MenuTableViewCell
+            
+        default:
+            break
+        }
+        
+        
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let mainStoreboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        /*let mainStoreboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let DVC = mainStoreboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-        
         self.navigationController?.pushViewController(DVC, animated: true)
+        */
+        
+        switch indexPath.row {
+        case 0:
+            performSegue(withIdentifier: "GoToEvents", sender: nil)
+            break
+        case 1:
+            break
+        case 2:
+            break
+        case 3:
+            performSegue(withIdentifier: "GoToProfile", sender: nil)
+            break
+        case 4:
+            
+            break
+        default: break
+        }
+        
     }
     
     

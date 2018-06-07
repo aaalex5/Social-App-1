@@ -10,6 +10,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="CbZ-8a-zCh">
+            <objects>
+                <viewController id="gBl-id-Q6h" customClass="MainViewController" customModule="Social_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y99-U0-ewm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.63404444770000001" green="0.97012311220000003" blue="0.1410437605" alpha="0.48600706335616439" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="B6N-mQ-4X9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oKQ-Y3-gPk"/>
+                    <connections>
+                        <segue destination="hBo-V1-QH8" kind="show" id="JCW-QI-Xi1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tuh-bf-U9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2104.8000000000002" y="115.59220389805098"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="hId-gt-n4K">
             <objects>
@@ -23,10 +43,9 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQ3-0V-ZQN">
                                 <rect key="frame" x="0.0" y="64" width="300" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="0.19170055650684931" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LQ3-0V-ZQN" firstAttribute="top" secondItem="6sT-eq-nvQ" secondAttribute="top" id="44L-Hr-QQb"/>
                             <constraint firstItem="AnQ-Xk-fCr" firstAttribute="bottom" secondItem="6sT-eq-nvQ" secondAttribute="bottom" id="Dij-PZ-AD0"/>
@@ -43,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZs-Ck-uhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2135.1999999999998" y="115.59220389805098"/>
+            <point key="canvasLocation" x="2988" y="115.59220389805098"/>
         </scene>
         <!--LoginScreen-->
         <scene sceneID="tne-QT-ifu">
@@ -121,6 +140,7 @@
                                         </state>
                                         <connections>
                                             <action selector="signinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPN-j5-VG4"/>
+                                            <segue destination="icM-k4-lAu" kind="show" identifier="GoToHome" id="uJZ-Ny-JPL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -145,30 +165,29 @@
                         <outlet property="selector" destination="tRW-p4-dxJ" id="wZY-3Y-iyE"/>
                         <outlet property="signinButton" destination="ldC-KR-d8T" id="91M-yT-8bZ"/>
                         <outlet property="signinLabel" destination="XPL-bC-KTm" id="lig-go-4Cx"/>
-                        <segue destination="0mk-08-gI1" kind="show" identifier="GoToHome" id="xFe-TS-hfZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-398" y="116"/>
+            <point key="canvasLocation" x="292" y="116"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="PwV-B2-Nas">
+        <scene sceneID="HLP-0P-81G">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0mk-08-gI1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="icM-k4-lAu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nSD-hT-QwI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Lz-1J-xog">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="hBo-V1-QH8" kind="relationship" relationship="rootViewController" id="WLN-dU-nfX"/>
+                        <segue destination="gBl-id-Q6h" kind="relationship" relationship="rootViewController" id="IS3-eS-dqL"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QUA-AX-tjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2Y-iU-eS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="115.59220389805098"/>
+            <point key="canvasLocation" x="1165.5999999999999" y="115.59220389805098"/>
         </scene>
     </scenes>
 </document>

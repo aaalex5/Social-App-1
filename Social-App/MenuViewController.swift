@@ -12,9 +12,6 @@ protocol SlideMenuDelegate {
     func slideMenuSelectedAt(_ index : Int32)
 }
 
-
-
-
 class MenuViewController: UIViewController {
 
     var buttonMenu : UIButton!

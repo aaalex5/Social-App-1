@@ -69,8 +69,10 @@ class ViewController: UIViewController {
                 Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
                     if let u = user {
                         self.performSegue(withIdentifier: "GoToHome", sender: self)
+                        print("User is created!")
                     } else {
                         // Check error and show message
+                        print("Error creating user: \(error!.localizedDescription)")
                         }
                     }
                 }

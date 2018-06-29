@@ -39,6 +39,7 @@ class LoginViewController: UIViewController {
             Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
                 if let u = user {
                     // go to next page (user is found)
+                    //Look up what .dismiss function does (it works but like idk how)
                     self.dismiss(animated: false, completion: nil)
                 } else {
                     // Check error and show message

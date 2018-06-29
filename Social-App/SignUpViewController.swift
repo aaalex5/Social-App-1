@@ -41,6 +41,7 @@ class SignUpViewController: UIViewController {
                             print("User display name changed!")
                         }
                     }
+                    //Look up what .dismiss function does (it works but like idk how)
                     self.dismiss(animated: false, completion: nil)
                     
                 } else {

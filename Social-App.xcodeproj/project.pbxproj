@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D80012D4A5ABE539B004FCF2 /* Pods_Social_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA69F3D5ED0E0C8C29455FD /* Pods_Social_App.framework */; };
 		EB579AF420C36EBE00672B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB579AF320C36EBE00672B2D /* GoogleService-Info.plist */; };
+		EB80FEE620E590C600998194 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80FEE520E590C600998194 /* MenuViewController.swift */; };
+		EB80FEE820E5912C00998194 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80FEE720E5912C00998194 /* LoginViewController.swift */; };
+		EB80FEEA20E5913700998194 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80FEE920E5913700998194 /* SignUpViewController.swift */; };
+		EB80FEEC20E5A82C00998194 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80FEEB20E5A82C00998194 /* ProfileViewController.swift */; };
 		EBDF281020AA2F4D00458E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */; };
 		EBDF281220AA2F4D00458E05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF281120AA2F4D00458E05 /* ViewController.swift */; };
 		EBDF281520AA2F4D00458E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDF281320AA2F4D00458E05 /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 		A49519C9995F02E7C6BDC89D /* Pods-Social-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social-App/Pods-Social-App.debug.xcconfig"; sourceTree = "<group>"; };
 		D150FC27A092F9FD7EADD2CB /* Pods-Social-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social-App/Pods-Social-App.release.xcconfig"; sourceTree = "<group>"; };
 		EB579AF320C36EBE00672B2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB80FEE520E590C600998194 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EB80FEE720E5912C00998194 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EB80FEE920E5913700998194 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EB80FEEB20E5A82C00998194 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EBDF280C20AA2F4D00458E05 /* Social-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBDF281120AA2F4D00458E05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +90,10 @@
 			children = (
 				EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */,
 				EBDF281120AA2F4D00458E05 /* ViewController.swift */,
+				EB80FEE520E590C600998194 /* MenuViewController.swift */,
+				EB80FEE720E5912C00998194 /* LoginViewController.swift */,
+				EB80FEE920E5913700998194 /* SignUpViewController.swift */,
+				EB80FEEB20E5A82C00998194 /* ProfileViewController.swift */,
 				EBDF281320AA2F4D00458E05 /* Main.storyboard */,
 				EBDF281620AA2F4D00458E05 /* Assets.xcassets */,
 				EBDF281820AA2F4D00458E05 /* LaunchScreen.storyboard */,
@@ -209,8 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB80FEEC20E5A82C00998194 /* ProfileViewController.swift in Sources */,
+				EB80FEE820E5912C00998194 /* LoginViewController.swift in Sources */,
 				EBDF281220AA2F4D00458E05 /* ViewController.swift in Sources */,
+				EB80FEE620E590C600998194 /* MenuViewController.swift in Sources */,
 				EBDF281020AA2F4D00458E05 /* AppDelegate.swift in Sources */,
+				EB80FEEA20E5913700998194 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,6 @@
 		EB80FEEA20E5913700998194 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80FEE920E5913700998194 /* SignUpViewController.swift */; };
 		EB80FEEC20E5A82C00998194 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80FEEB20E5A82C00998194 /* ProfileViewController.swift */; };
 		EBDF281020AA2F4D00458E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */; };
-		EBDF281220AA2F4D00458E05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF281120AA2F4D00458E05 /* ViewController.swift */; };
 		EBDF281520AA2F4D00458E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDF281320AA2F4D00458E05 /* Main.storyboard */; };
 		EBDF281720AA2F4D00458E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDF281620AA2F4D00458E05 /* Assets.xcassets */; };
 		EBDF281A20AA2F4D00458E05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDF281820AA2F4D00458E05 /* LaunchScreen.storyboard */; };
@@ -31,7 +30,6 @@
 		EB80FEEB20E5A82C00998194 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EBDF280C20AA2F4D00458E05 /* Social-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBDF281120AA2F4D00458E05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBDF281420AA2F4D00458E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBDF281620AA2F4D00458E05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBDF281920AA2F4D00458E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				EBDF280F20AA2F4D00458E05 /* AppDelegate.swift */,
-				EBDF281120AA2F4D00458E05 /* ViewController.swift */,
 				EB80FEE520E590C600998194 /* MenuViewController.swift */,
 				EB80FEE720E5912C00998194 /* LoginViewController.swift */,
 				EB80FEE920E5913700998194 /* SignUpViewController.swift */,
@@ -223,7 +220,6 @@
 			files = (
 				EB80FEEC20E5A82C00998194 /* ProfileViewController.swift in Sources */,
 				EB80FEE820E5912C00998194 /* LoginViewController.swift in Sources */,
-				EBDF281220AA2F4D00458E05 /* ViewController.swift in Sources */,
 				EB80FEE620E590C600998194 /* MenuViewController.swift in Sources */,
 				EBDF281020AA2F4D00458E05 /* AppDelegate.swift in Sources */,
 				EB80FEEA20E5913700998194 /* SignUpViewController.swift in Sources */,

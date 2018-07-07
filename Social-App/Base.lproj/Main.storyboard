@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -233,8 +234,11 @@
                         <constraints>
                             <constraint firstItem="ACD-gD-7HV" firstAttribute="leading" secondItem="Uns-zf-XIN" secondAttribute="leading" id="95Q-iL-Kaq"/>
                             <constraint firstItem="ACD-gD-7HV" firstAttribute="bottom" secondItem="YyU-LY-EvA" secondAttribute="bottom" id="AXG-pX-UGb"/>
+                            <constraint firstItem="YyU-LY-EvA" firstAttribute="trailing" secondItem="ACD-gD-7HV" secondAttribute="trailing" id="FGy-bI-iSp"/>
+                            <constraint firstItem="YyU-LY-EvA" firstAttribute="top" secondItem="ACD-gD-7HV" secondAttribute="top" constant="20" id="IiH-ar-ual"/>
                             <constraint firstAttribute="trailing" secondItem="ACD-gD-7HV" secondAttribute="trailing" id="dd4-YT-xkA"/>
                             <constraint firstItem="ACD-gD-7HV" firstAttribute="top" secondItem="Uns-zf-XIN" secondAttribute="top" id="rkk-0J-STV"/>
+                            <constraint firstItem="ACD-gD-7HV" firstAttribute="leading" secondItem="YyU-LY-EvA" secondAttribute="leading" id="xkY-fU-myl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YyU-LY-EvA"/>
                     </view>
@@ -261,7 +265,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="G4k-3E-K16" kind="relationship" relationship="viewControllers" id="4Q2-x2-BNq"/>
-                        <segue destination="px5-2F-SiG" kind="relationship" relationship="viewControllers" id="yhd-PW-ybq"/>
+                        <segue destination="d7C-dg-z8t" kind="relationship" relationship="viewControllers" id="uZ2-qF-Z9I"/>
                         <segue destination="gnO-Aq-cOc" kind="relationship" relationship="viewControllers" id="rKN-Th-ACH"/>
                         <segue destination="9Xe-YE-pYQ" kind="relationship" relationship="viewControllers" id="ikU-I8-efS"/>
                     </connections>
@@ -271,32 +275,56 @@
             <point key="canvasLocation" x="1292" y="122"/>
         </scene>
         <!--Profile View Controller-->
-        <scene sceneID="bmH-qe-Uzc">
+        <scene sceneID="dv9-aY-s0o">
             <objects>
-                <viewController id="px5-2F-SiG" customClass="ProfileViewController" customModule="Social_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hCh-fR-p7b">
+                <viewController id="d7C-dg-z8t" customClass="ProfileViewController" customModule="Social_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hT2-Qi-gZO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yt-EJ-dLF">
-                                <rect key="frame" x="16" y="35" width="76" height="49"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user-image-with-black-background" translatesAutoresizingMaskIntoConstraints="NO" id="qD6-QV-j9f">
+                                <rect key="frame" x="123" y="89" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dq-ly-27I">
+                                <rect key="frame" x="16" y="20" width="48" height="49"/>
+                                <color key="backgroundColor" red="0.98742395640000002" green="0.9682651162" blue="0.95524889229999999" alpha="0.63412350169999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="qMi-nn-dPn"/>
+                                </constraints>
                                 <state key="normal" title="Logout">
-                                    <color key="titleColor" red="0.049188978970050812" green="0.12858816981315613" blue="0.12354005128145218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.049188978969999998" green="0.12858816980000001" blue="0.1235400513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="handleLogout:" destination="px5-2F-SiG" eventType="touchUpInside" id="toa-IM-xL0"/>
+                                    <action selector="handleLogout:" destination="d7C-dg-z8t" eventType="touchUpInside" id="3T5-Xh-rKG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NS6-aw-nSz">
+                                <rect key="frame" x="123" y="225" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Tap to Change">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.39539992809295654" green="0.91126751899719238" blue="0.85556310415267944" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="HYx-EI-XoZ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8dq-ly-27I" firstAttribute="leading" secondItem="hT2-Qi-gZO" secondAttribute="leadingMargin" id="2gS-pT-27H"/>
+                            <constraint firstItem="8dq-ly-27I" firstAttribute="top" secondItem="ZiT-ej-UMU" secondAttribute="top" id="Xbn-6S-Hp9"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8dq-ly-27I" secondAttribute="trailingMargin" id="qTT-dL-3uW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZiT-ej-UMU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="DEw-9C-RWa"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="fDT-3R-dga"/>
+                    <connections>
+                        <outlet property="changeProfileBtn" destination="NS6-aw-nSz" id="Poc-58-E1k"/>
+                        <outlet property="profileImage" destination="qD6-QV-j9f" id="DRP-I2-rna"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zN5-hs-wWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VqF-cW-Tev" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1292" y="890.10494752623697"/>
+            <point key="canvasLocation" x="1292" y="900.89955022488766"/>
         </scene>
         <!--Item-->
         <scene sceneID="fJd-ML-yL0">
@@ -437,6 +465,7 @@
     </scenes>
     <resources>
         <image name="Michigan_Wolverines_Block_M" width="851" height="612"/>
+        <image name="user-image-with-black-background" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="cFN-hz-BZu"/>

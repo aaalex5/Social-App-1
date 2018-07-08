@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class ProfileViewController: UIViewController, UITextFieldDelegate {
     
@@ -33,10 +34,11 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     }
     
     //Following 2nd tutorial atm
+    /*
     func uploadProfileImage (_ image:UIImage, completion: @escaping ((_ url:String)->())) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let storageRef = Storage.storage().reference().child("user/\(uid)")
-    }
+    }*/
     
     @objc func openImagePicker(_ sender: Any) {
         self.present(imagePicker, animated: true, completion: nil)

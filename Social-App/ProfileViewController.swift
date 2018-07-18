@@ -37,14 +37,25 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         //1. Upload the profile image to Firebase Storage
         //takes the url image data and we can save it now to the database
         self.uploadProfileImage(image) { url in
-            let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-            changeRequest?.photoURL = url
-            changeRequest?.commitChanges { error in
-                if error == nil {
-                    print("User photo image changed!")
-                    //self.dismiss(animated: false, completion: nil)
-                } else {
-                    print("Error: \(error!.localizedDescription)")
+            
+            //idk if this is gonna work...
+            if url.absoluteString != "" {
+                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                changeRequest?.photoURL = url
+                changeRequest?.commitChanges { error in
+                    if error == nil {
+                        print("User photo image changed!")
+                        
+                        self.saveProfile(profileImageURL: url) { success in
+                            if success {
+                                self.dismiss(animated: true, completion: nil)
+                            }
+                        }
+                        
+                        //self.dismiss(animated: false, completion: nil)
+                    } else {
+                        print("Error: \(error!.localizedDescription)")
+                    }
                 }
             }
         }
@@ -80,6 +91,18 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
                  //Converting nil to URL to pass it as an error state.
                 completion(nil! as URL)
             }
+        }
+    }
+    
+    func saveProfile(profileImageURL:URL, completion: @escaping ((_ success:Bool)->())) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let databaseRef = Database.database().reference().child("users/profile/\(uid)")
+        let userObject = [
+            "photoURL": profileImageURL.absoluteString
+        ] as [String:Any]
+        
+        databaseRef.setValue(userObject) { error, ref in
+            completion(error == nil)
         }
     }
     

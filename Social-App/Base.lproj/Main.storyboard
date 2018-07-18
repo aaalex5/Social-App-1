@@ -68,7 +68,7 @@
         <!--Menu View Controller-->
         <scene sceneID="dyk-YY-A7R">
             <objects>
-                <viewController id="Ri9-f6-wnu" customClass="MenuViewController" customModule="Social_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ri9-f6-wnu" customClass="MenuViewController" customModule="Social_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jTt-sH-stN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,6 @@
                     <connections>
                         <outlet property="LoginBtn" destination="fKM-qn-8Li" id="P8v-wY-1qA"/>
                         <outlet property="SignUpBtn" destination="Egb-4M-Oq0" id="APE-Mx-nbJ"/>
-                        <segue destination="XMh-CG-PbL" kind="show" identifier="GoToMain" id="Xib-DX-RZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6kL-Et-fvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -253,10 +252,10 @@
             </objects>
             <point key="canvasLocation" x="-294" y="700"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--MainTabBarController-->
         <scene sceneID="g6F-mW-z89">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XMh-CG-PbL" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" title="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XMh-CG-PbL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sZl-En-jaI">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

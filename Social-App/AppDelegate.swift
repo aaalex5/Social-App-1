@@ -22,6 +22,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
         //Configures firebase to app
         FirebaseApp.configure()
         
+        //listen for logout just in case user is ever logged out
+        let authListener = Auth.auth().addStateDidChangeListener { auth, user in
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            if user != nil {
+                //Tab Bar Screen
+                let controller = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
+            } else {
+                //Menu Screen
+                let controller = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
+                
+            }
+        }
+        
+        
+        
         return true
     }
    

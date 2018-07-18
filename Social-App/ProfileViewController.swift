@@ -117,7 +117,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func handleLogout(_ sender: UIButton) {
         try! Auth.auth().signOut()
-        self.dismiss(animated: false, completion: nil)
+        //self.dismiss(animated: false, completion: nil)
     }
 }
 

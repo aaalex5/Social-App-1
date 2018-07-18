@@ -27,10 +27,11 @@ class MenuViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        /*
         if let user = Auth.auth().currentUser {
             self.performSegue(withIdentifier: "GoToMain", sender: self)
         }
+        */
     }
     
 

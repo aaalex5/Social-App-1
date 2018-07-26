@@ -43,11 +43,21 @@ class LoginViewController: UIViewController {
                 } else {
                     // Check error and show message
                     print("Error logging in user: \(error!.localizedDescription)")
+                    
+                    self.resetForm()
+                    
                 }
             }
         }
     }
     
+    
+    func resetForm() {
+        //Alerts the person that this is invalid account for login
+        let alert = UIAlertController(title: "Error logging in", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

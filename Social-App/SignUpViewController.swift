@@ -39,6 +39,9 @@ class SignUpViewController: UIViewController {
                     changeRequest?.commitChanges { error in
                         if error == nil {
                             print("User display name changed!")
+                        } else {
+                            //Might not need this here
+                            self.resetForm()
                         }
                     }
                     self.dismiss(animated: false, completion: nil)
@@ -46,11 +49,18 @@ class SignUpViewController: UIViewController {
                 } else {
                     // Check error and show message
                     print("Error creating user: \(error!.localizedDescription)")
+                    self.resetForm()
                 }
             }
         }
     }
     
+    func resetForm() {
+        //Alerts the person that this is invalid account for login
+        let alert = UIAlertController(title: "Error signing up", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

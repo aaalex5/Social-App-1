@@ -25,6 +25,7 @@ class PostTableViewCell: UITableViewCell {
         //I put this line in because sometimes the values equal nil for some reason
         //Probably should check why...
         if (profileImageView != nil) {
+            //I added this print to see what the height was (should be 40 rn)
             print(profileImageView.bounds.height)
             profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
             profileImageView.clipsToBounds = true
